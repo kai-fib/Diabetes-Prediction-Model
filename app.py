@@ -9,6 +9,9 @@ import sys
 # We map it to the new location so pickle can find it.
 import sklearn.ensemble._forest as _forest
 sys.modules['sklearn.ensemble.forest'] = _forest
+
+import sklearn.tree._classes as _tree_classes
+sys.modules['sklearn.tree.tree'] = _tree_classes
 # ------------------------------------------------
 
 # filename = 'diabetes-prediction-rfc-model.pkl'
